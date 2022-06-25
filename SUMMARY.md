@@ -1,7 +1,6 @@
 # Table of contents
 
 * [⚡ Introduction](README.md)
-* [⏫ Upgrading to 6.x from 5.x](upgrading-to-6.x-from-5.x.md)
 
 ## Getting Started
 
@@ -9,7 +8,7 @@
 * [👨‍🚀 Preparing the model](getting-started/preparing-the-model.md)
 * [👨‍⚕️ Preparing the service provider](getting-started/preparing-the-service-provider.md)
 
-## Plans <a href="defining-plans" id="defining-plans"></a>
+## Plans <a href="#defining-plans" id="defining-plans"></a>
 
 * [🗾 Defining the plans](defining-plans/defining-the-plans.md)
 * [✨ Features](defining-plans/features/README.md)
