@@ -16,6 +16,13 @@ jobs:
           run: npm install --cache /tmp/empty-cache
       -   name: Build Site
           run: ./vendor/bin/jigsaw build
+      - name: Save cache
+        run: |
+          git add -f cache
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git commit -m "update cache"
+          git push -f
       -   name: Commit files
           if: success() || failure()
           run: |
