@@ -15,7 +15,7 @@ jobs:
       -   name: Install NPM Dependencies
           run: npm install --cache /tmp/empty-cache
       -   name: Build Site
-          run: ./vendor/bin/jigsaw build production
+          run: npm run production
       -   name: Commit files
           if: success() || failure()
           run: |
