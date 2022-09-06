@@ -26,8 +26,10 @@
       <change beforePath="$PROJECT_DIR$/cache/e3702ff5269711fb164279b0adb6dd484b9a6cf3.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/f846436f0e4d8051ad7c4ba1e116cb481f34d540.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config.production.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.production.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/_layouts/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/_layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/docs/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/docs/summary.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
@@ -78,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662494532628</updated>
-      <workItem from="1662494533979" duration="6146000" />
+      <workItem from="1662494533979" duration="6465000" />
     </task>
     <servers />
   </component>
