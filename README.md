@@ -1,15 +1,95 @@
+# Jigsaw Docs Starter Template
+
+This is a starter template for creating a beautiful, customizable documentation site for your project with minimal effort. You’ll only have to change a few settings and you’re ready to go.
+
+[View a preview of the docs template.](http://jigsaw-docs-template.tighten.co/)
+
+## Installation
+
+After installing Jigsaw, run the following command from your project directory:
+
+```bash
+./vendor/bin/jigsaw init docs
+```
+
+This starter template includes samples of common page types, and comes pre-configured with:
+
+- A fully responsive navigation bar
+- A sidebar navigation menu
+- [Tailwind CSS](https://tailwindcss.com/), a utility CSS framework that allows you to customize your design without touching a line of CSS
+- [Purgecss](https://www.purgecss.com/) to remove unused selectors from your CSS, resulting in smaller CSS files
+- Syntax highlighting using [highlight.js](https://highlightjs.org/)
+- A script that automatically generates a `sitemap.xml` file
+- A search bar powered by [Algolia DocSearch](https://community.algolia.com/docsearch/), and instructions on how to get started with their free indexing service
+- A custom 404 page
+
 ---
-description: >-
-  Cashier usage is a simple quota feature usage tracker for Laravel Cashier
-  subscriptions.
+
+![Docs starter template screenshot](https://user-images.githubusercontent.com/357312/50345478-40170c00-04fd-11e9-856c-ad46d1ac45cb.png)
+
 ---
 
-# ⚡ Introduction
+### Configuring your new site
 
-![](.gitbook/assets/Cashier\_usage\_25.png)
+As with all Jigsaw sites, configuration settings can be found in `config.php`; you can update the variables in that file with settings specific to your project. You can also add new configuration variables there to use across your site; take a look at the [Jigsaw documentation](http://jigsaw.tighten.co/docs/site-variables/) to learn more.
 
-[![CI](https://github.com/gopayee/cashier-usage/workflows/CI/badge.svg?branch=master)](https://github.com/gopayee/cashier-usage/workflows/CI/badge.svg?branch=master) [![codecov](https://camo.githubusercontent.com/bfece360d9a8e308e8c65a29b75492565150de9bfdb2e519a348ea4d7dcb2713/68747470733a2f2f636f6465636f762e696f2f67682f72656e6f6b692d636f2f636173686965722d72656769737465722f6272616e63682f6d61737465722f67726170682f62616467652e737667)](https://codecov.io/gh/gopayee/cashier-usage/branch/master) [![StyleCI](https://camo.githubusercontent.com/1cb21946144ee46c0d4482f27d9e210c62b3cb864d9eda861925ae68065a7d7f/68747470733a2f2f6769746875622e7374796c6563692e696f2f7265706f732f3237373130393435362f736869656c643f6272616e63683d6d6173746572)](https://github.styleci.io/repos/277109456) [![Latest Stable Version](https://camo.githubusercontent.com/0222a920352f9d01c5233a52e0379cded2432631356ecfc054a9f0b058c283f0/68747470733a2f2f706f7365722e707567782e6f72672f72656e6f6b692d636f2f636173686965722d72656769737465722f762f737461626c65)](https://packagist.org/packages/gopayee/cashier-usage) [![Total Downloads](https://camo.githubusercontent.com/e779e17604d93fc7d78b1108979ac3bd140e9641c30881134ad9a465372d920d/68747470733a2f2f706f7365722e707567782e6f72672f72656e6f6b692d636f2f636173686965722d72656769737465722f646f776e6c6f616473)](https://packagist.org/packages/gopayee/cashier-usage) [![Monthly Downloads](https://camo.githubusercontent.com/4f200cc5bb3ce4c129f59daa1cd7d9254e31532e637977d053aa7ee5e2230cb5/68747470733a2f2f706f7365722e707567782e6f72672f72656e6f6b692d636f2f636173686965722d72656769737465722f642f6d6f6e74686c79)](https://packagist.org/packages/gopayee/cashier-usage) [![License](https://camo.githubusercontent.com/23cb2014e5899c38777abb665038ffc07a52a388012d34484985420284e8d75f/68747470733a2f2f706f7365722e707567782e6f72672f72656e6f6b692d636f2f636173686965722d72656769737465722f6c6963656e7365)](https://packagist.org/packages/gopayee/cashier-usage)
+```php
+// config.php
+return [
+    'baseUrl' => 'https://my-awesome-jigsaw-site.com/',
+    'production' => false,
+    'siteName' => 'My Site',
+    'siteDescription' => 'Give your documentation a boost with Jigsaw.',
+    'docsearchApiKey' => '',
+    'docsearchIndexName' => '',
+    'navigation' => require_once('navigation.php'),
+];
+```
 
-Cashier usage is a simple quota feature usage tracker for Laravel Cashier subscriptions.
+> Tip: This configuration file is also where you’ll define any "collections" (for example, a collection of the contributors to your site, or a collection of blog posts). Check out the official [Jigsaw documentation](https://jigsaw.tighten.co/docs/collections/) to learn more.
 
-It helps you define static, project-level plans, and attach features that can be tracked and limited throughout the app. For example, you might want to set a limit of `5` seats per team and make it so you can check it later. Cashier usage comes with a nice wrapper for Laravel Cashier that does that out-of-the-box.
+---
+
+### Adding Content
+
+You can write your content using a [variety of file types](http://jigsaw.tighten.co/docs/content-other-file-types/). By default, this starter template expects your content to be located in the `source/docs` folder. If you change this, be sure to update the URL references in `navigation.php`.
+
+The first section of each content page contains a YAML header that specifies how it should be rendered. The `title` attribute is used to dynamically generate HTML `title` and OpenGraph tags for each page. The `extends` attribute defines which parent Blade layout this content file will render with (e.g. `_layouts.documentation` will render with `source/_layouts/documentation.blade.php`), and the `section` attribute defines the Blade "section" that expects this content to be placed into it.
+
+```yaml
+---
+title: Navigation
+description: Building a navigation menu for your site
+extends: _layouts.documentation
+section: content
+---
+```
+
+[Read more about Jigsaw layouts.](https://jigsaw.tighten.co/docs/content-blade/)
+
+---
+
+### Adding Assets
+
+Any assets that need to be compiled (such as JavaScript, Less, or Sass files) can be added to the `source/_assets/` directory, and Laravel Mix will process them when running `npm run dev` or `npm run prod`. The processed assets will be stored in `/source/assets/build/` (note there is no underscore on this second `assets` directory).
+
+Then, when Jigsaw builds your site, the entire `/source/assets/` directory containing your built files (and any other directories containing static assets, such as images or fonts, that you choose to store there) will be copied to the destination build folders (`build_local`, on your local machine).
+
+Files that don't require processing (such as images and fonts) can be added directly to `/source/assets/`.
+
+[Read more about compiling assets in Jigsaw using Laravel Mix.](http://jigsaw.tighten.co/docs/compiling-assets/)
+
+---
+
+## Building Your Site
+
+Now that you’ve edited your configuration variables and know how to customize your styles and content, let’s build the site.
+
+```bash
+# build static files with Jigsaw
+./vendor/bin/jigsaw build
+
+# compile assets with Laravel Mix
+# options: dev, prod
+npm run dev
+```
