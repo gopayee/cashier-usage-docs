@@ -15,11 +15,11 @@ jobs:
       -   name: Install NPM Dependencies
           run: npm install --cache /tmp/empty-cache
       -   name: Build Site
-          run: ./vendor/bin/jigsaw build production
+          run: ./vendor/bin/jigsaw build
       -   name: Commit files
           if: success() || failure()
           run: |
-            git add -f build_production
+            git add -f build_local
             git commit -m "Build for deploy"
       -   name: Publish
           run: |
