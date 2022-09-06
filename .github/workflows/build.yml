@@ -15,7 +15,7 @@ jobs:
       -   name: Install NPM Dependencies
           run: npm install --cache /tmp/empty-cache
       -   name: Build Site
-          run: ./vendor/bin/jigsaw build
+          run: ./vendor/bin/jigsaw build production
       - name: Save cache
         run: |
           git add -f cache
