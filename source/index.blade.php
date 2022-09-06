@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <img src="/assets/img/logo-large.svg" alt="{{ $page->siteName }} large logo" class="mx-auto mb-6 lg:mb-0 ">
+        <img src="http://gopayee.com/cashier-usage-docs/assets/img/logo-large.svg" alt="{{ $page->siteName }} large logo" class="mx-auto mb-6 lg:mb-0 ">
     </div>
 </section>
 @endsection

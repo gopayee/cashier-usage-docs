@@ -28,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/config.production.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.production.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/_layouts/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/_layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662494532628</updated>
-      <workItem from="1662494533979" duration="5939000" />
+      <workItem from="1662494533979" duration="6077000" />
     </task>
     <servers />
   </component>
