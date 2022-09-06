@@ -16,4 +16,3 @@ mix.js('source/_assets/js/main.js', 'js')
         ],
     })
     .sourceMaps()
-    .version();

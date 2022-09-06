@@ -25,6 +25,8 @@
       <change beforePath="$PROJECT_DIR$/cache/e26a205d105e23ad65f2af8a454260387f36e20a.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/e3702ff5269711fb164279b0adb6dd484b9a6cf3.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/f846436f0e4d8051ad7c4ba1e116cb481f34d540.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/_layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662494532628</updated>
-      <workItem from="1662494533979" duration="4382000" />
+      <workItem from="1662494533979" duration="4629000" />
     </task>
     <servers />
   </component>
