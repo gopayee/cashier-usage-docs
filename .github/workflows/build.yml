@@ -15,7 +15,7 @@ jobs:
       -   name: Install NPM Dependencies
           run: npm install --cache /tmp/empty-cache
       -   name: Build Site
-          run: npm run production
+          run: npm run prod
       -   name: Commit files
           if: success() || failure()
           run: |
