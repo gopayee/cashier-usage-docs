@@ -6,8 +6,8 @@
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->description }}">
         <title>{{ $page->title }}</title>
-        <link rel="stylesheet" href="/assets/build/css/main.css">
-        <script defer src="/assets/build/js/main.js"></script>
+        <link rel="stylesheet" href="http://gopayee.com/cashier-usage-docs/assets/build/css/main.css">
+        <script defer src="http://gopayee.com/cashier-usage-docs/assets/build/js/main.js"></script>
     </head>
     <body class="text-gray-900 font-sans antialiased">
         @yield('body')

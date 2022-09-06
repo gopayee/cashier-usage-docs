@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'https://jigsaw-docs-template.tighten.co',
+    'baseUrl' => 'http://gopayee.com/cashier-usage-docs/',
     'production' => true,
 
     // DocSearch credentials
